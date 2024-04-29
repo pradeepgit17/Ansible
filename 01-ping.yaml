@@ -4,4 +4,4 @@
   hosts: web
   tasks:
     - name: pinging the server
-      ansible.builtin.ping: null
+      ansible.builtin.ping: 
