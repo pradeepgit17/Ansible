@@ -4,7 +4,7 @@
   vars: 
     course: "Ansible"
     trainer: "pradeep"
-    Duration: "120hrs"
+    duration: "120hrs"
   tasks: 
   - name: print info
     ansible.builtin.debug:
