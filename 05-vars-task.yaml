@@ -1,0 +1,16 @@
+- name: variables
+  hosts: localhost
+  become: yes
+  vars: 
+    course: "aws"
+    trainer: "pradeep"
+    duration: "12hrs"
+  tasks: 
+  - name: print override info
+    vars: #task level
+      course: "Devops"
+    ansible.builtin.debug:
+      msg: "hi, i am learning {{course}} from trainer {{trainer}}, {{duration}} "
+  - name: print info
+    ansible.builtin.debug:
+      msg: "hi, i am learning {{course}} from trainer {{trainer}}, {{duration}} "
